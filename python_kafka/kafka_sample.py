@@ -1,5 +1,8 @@
 import time
 from pykafka import KafkaClient
+from pykafka.exceptions import MessageSizeTooLarge
+
+from common.kafka_client import Queue
 
 '''
 client = KafkaClient(hosts='kafka-shopee-nonlive-10-65-132-21:9092,'
@@ -32,8 +35,10 @@ with topic.get_producer(delivery_reports=True) as producer:
 					msg, exc = producer.get_delivery_report(block=False)
 					if exc is not None:
 						print 'Failed to deliver msg {}:{}'.format(msg.partition_key, repr(exc))
+						if type(exc) is not MessageSizeTooLarge:
+							producer.produce(msg.value)
 					else:
 						print 'Successfully delivered msg {}'.format(msg.partition_key)
-				except Exception as e:
+				except Queue.Empty:
 					break
 print('2 cost time => {time} ms'.format(time=int(time.time() * 1000) - start))
