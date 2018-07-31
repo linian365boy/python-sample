@@ -12,6 +12,7 @@ XML_HEADER = u'<?xml version="1.0" encoding="UTF-8"?>\n'
 URL = 'http://www.szyoy.com'
 URL_LIST = {}
 OPENED_URL = set()
+FILE_PATH = u'/usr/share/nginx/html/sitemap/'
 
 
 def open_url(url):
@@ -140,4 +141,4 @@ if __name__ == '__main__':
 		for home_url in home_all_url:
 			if foreign_chain(home_url):
 				open_url(home_url)
-	generate_xml('sitemap.xml', URL_LIST.values())
+	generate_xml(FILE_PATH + 'sitemap.xml', URL_LIST.values())

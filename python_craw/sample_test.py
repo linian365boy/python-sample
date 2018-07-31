@@ -1,11 +1,3 @@
-str = 'http://www.baiduc.com?a=123'
-start = str.index('?')
-print(start)
-str = str[0:start]
-print(str)
+from datetime import datetime
 
-str = 'http://www.baiduc.com2342#frwer#aeswr'
-start = str.index('#')
-print(start)
-str = str[0:start]
-print(str)
+print(str(datetime.now()).replace(":", "_").strip().replace(" ", "_").split(".")[0])
