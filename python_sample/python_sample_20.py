@@ -1,0 +1,33 @@
+import time
+
+str = "2018-08-15 16:50:12.641|ERROR|15515:139796852707888|logger.py:80|logger._log|13979685270788815343230126402014|##FALLBACK##fallback: 1534322714, now: 1534323012##bulk##('clp_analytics_live_tw-2018.08.15', 'default', [{'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-0', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 124, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-1', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 127, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-2', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 126, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-3', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 128, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-4', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 140, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-5', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 133, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-6', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 135, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-7', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 134, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-8', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 125, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-9', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 131, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-10', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 130, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-11', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 129, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-12', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 136, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-13', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 137, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-14', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 138, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-15', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 139, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-16', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 132, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}, {'username': 'showming7731', 'timestamp': 1534323014, 'devicetype': 'APP', 'result': 'success', 'id': '13979685270788815343230126402014-report_redeem_view_list-17', 'scenario': 'redeem', 'dataview_type': 'report', 'userid': 40756062, 'redeem_id': 141, 'deviceid': 'IgEyPwWOcL8mYZj1JV9mcDoqXorCUMWc', 'type': 'view'}])##{}##"
+
+success_index = 0
+wrong_data = list()
+fail_index = 0
+
+try:
+	arr = str.split('##')
+	func_type = arr[3]
+	print('func_type=%s' % func_type)
+	es_data = arr[4]
+	print('es_data=%s' % es_data)
+	es_data_tuple = tuple(eval(arr[4]))
+	print(es_data_tuple)
+	index_name = es_data_tuple[0]
+	print('index_name=%s' % index_name)
+	index_body = es_data_tuple[2]
+	print('index_body=%s, type=%s' % (index_body, type(index_body)))
+	print(isinstance(index_body, list))
+	#process(index_body)
+	#es.index(index=index_name, doc_type='default', id=None, body=index_body)
+	success_index += 1
+	time.sleep(0.05)
+except Exception as e:
+	print e
+	wrong_data.append(str)
+	fail_index += 1
+
+
+print('success_index=%s' % success_index)
+print('fail_index=%s' % fail_index)
